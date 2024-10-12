@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  background-image: url("../images/background.png");
+  background-size: 25%;
+  background-position: center;
+}
+
+@font-face {
+  font-family: "MenuFuente";
+  src: url("../font/Soloist-Z6M8.otf") format("truetype");
+}
+
+/* -------- HEADER -------- */
+
+header {
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+  font-family: "MenuFuente";
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.5px black
+}
+
+header .navbar-nav .nav-link {
+  color: white;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+header .navbar-nav .nav-link:hover {
+  color: #cb8e14;
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-brand img {
+  transform: scale(3);
+  width: 60px;
+}
+
+a .navbar-brand img {
+  position: relative;
+  top: 30px;
+}
+
+/* Logo centrado visible solo en pantallas pequeñas */
+@media (max-width: 1000px) {
+  .navbar-brand.d-lg-none img {
+    width: 50px; /* Tamaño más pequeño para pantallas chicas */
+    margin-bottom: 40px;
+    margin-left: 80px;
+  }
+
+  body {
+    background-size: 60%;
+  }
+
+  .seccion1 {
+    margin-top: 12rem;
+  }
+}
+
+/* ---------- SECCION 1 -----------*/
+
+.seccion1 {
+  color: white;
+  font-family: "MenuFuente";
+  -webkit-text-stroke: 0.5px black;
+}
+
+.seccion1 h1 {
+  text-align: center;
+}
+
+/* --------- HERO SECTION ---------- */
+
+.hero-container {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  /* overflow: hidden; */
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(112, 39, 39, 0.2),
+      rgba(112, 39, 39, 0.2)
+    ),
+    url("../images/hero/hero-bg.png"); /* link para linear-gradient: https://cssgradient.io/ */
+  background-size: 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(1.5px);
+  z-index: 1; /* Coloca la imagen de fondo detrás del contenido */
+}
+
+.hero-container .px-2 {
+  position: relative;
+  z-index: 2; /* Coloca el texto adelante de la imagen del hero-section */
+}
+
+/* DISEÑO DE BOTONES (HOME) */
+
+.hero-container h1,
+.hero-container p,
+.hero-container button,
+.cartas button {
+  color: white;
+}
+
+.hero-container img {
+  width: 180px;
+}
+
+.hero-container .btn-warning,
+.cartas button {
+  border-color: #cb8e14;
+  background-color: #cb8e14;
+}
+
+.hero-container .subtext,
+.hero-container button,
+.cartas button {
+  font-family: "MenuFuente";
+  /* le da trazo al texto del botom */
+  -webkit-text-stroke: 0.7px black;
+}
+
+.hero-container button .cartas button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-container button:hover,
+.cartas button:hover {
+  transform: scale(1.1);
+}
+
+/* --------- CARTAS ------------*/
+
+.cartas {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body h5 {
+  font-family: "MenuFuente";
+  -webkit-text-stroke: 0.7px black;
+}
+
+.cartas button {
+  width: 135px;
+  font-size: smaller;
+  height: 40px;
+}
+
+/* --------- SIGN-IN -----------*/
+.form-body {
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .form-body {
+    margin-top: 12rem;
+  }
+}
+
+/* --------- FOOTER -----------*/
+footer {
+  text-align: center;
+  color: white;
+}

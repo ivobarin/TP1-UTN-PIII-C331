@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Sign-In</title>
+    <title>Sign-Up</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -17,35 +17,35 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <!-- logo centrado (visible para pantallas chicas) -->
-                <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+                <a class="navbar-brand mx-auto d-lg-none" href="../index.html">
                     <img src="..\images\icons\logoNav.png" alt="Logo">
                 </a>
 
                 <!-- Botón de colapso para pantallas pequeñas -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="btnToggler">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Contenido colapsable -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <!-- Enlaces del menú izquierdo -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2">
                         <li class="nav-item">
                             <a class="nav-link active" href="./signIn.html">sign-in</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./signUp.html">sign-up</a>
+                            <a class="nav-link active" href="./signUp.html">sign-up</a>
                         </li>
                     </ul>
 
                     <!-- Logo centrado (visible en pantallas grandes) -->
-                    <a class="navbar-brand d-none d-lg-block mx-auto" href="../index.html">
+                    <a class="navbar-brand d-lg-block mx-auto d-none" href="../index.html">
                         <img src="..\images\icons\logoNav.png" alt="Logo" style="width: 50px;">
                     </a>
 
                     <!-- Enlaces del menú derecho -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2">
                         <li class="nav-item">
                             <a class="nav-link" href="">features</a>
                         </li>
@@ -60,23 +60,23 @@
     <!-- FIN DE HEADER -->
 
     <!-- FORM -->
-    <form class="container form-body text-white" action="#" method="post">
+    <form id="formSignUp" class="container form-body text-white"> <!-- action=# method="post" -->
         <!-- name -->
         <div class="form-group text-center mb-2">
             <h3 style="font-family: MenuFuente;margin-bottom:12px;-webkit-text-stroke: 0.7px black;">Registro</h3>
-            <input type="text" class="form-control mx-auto" id="staticEmail" maxlength="16" placeholder="Nombre"
-                required style="max-width: 400px">
+            <input type="text" class="form-control mx-auto" id="staticName" maxlength="16" placeholder="Nombre" required
+                style="max-width: 400px">
             <small> Máximo de 16 caracteres </small>
         </div>
         <!-- surname -->
         <div class="form-group text-center mb-2">
-            <input type="text" class="form-control mx-auto" id="staticEmail" placeholder="Apellido" required
+            <input type="text" class="form-control mx-auto" id="staticSurname" placeholder="Apellido" required
                 style="max-width: 400px">
         </div>
         <!-- email -->
         <div class="form-group text-center mb-2">
             <input type="email" class="form-control mx-auto" id="staticEmail"
-                placeholder="Dirección de correo electrónico" style="max-width: 400px">
+                placeholder="Dirección de correo electrónico" style="max-width: 400px" required>
         </div>
         <!-- password -->
         <div class="form-group text-center mb-2">
@@ -87,13 +87,13 @@
         </div>
         <!-- repeat password -->
         <div class="form-group text-center mb-3">
-            <input type="text" class="form-control mx-auto" id="inputPassword" minlength="6"
+            <input type="text" class="form-control mx-auto" id="mirrorPassword" minlength="6"
                 placeholder="Confirmación de contraseña" required style="max-width: 400px;">
         </div>
         <!-- terminos y condicciones -->
         <div class="form-group text-center mb-3">
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
                 <label class="form-check-label" for="gridCheck">
                     Acepto los <a href="" target="_blank">Términos</a> y la <a href="" target="_blank">Política de
                         Privacidad</a>
@@ -101,16 +101,31 @@
             </div>
         </div>
         <div class="form-group text-center pb-4">
-            <button type="submit" class="btn btn-primary">Registrarme</button>
+            <button id="btn-registro" type="submit" class="btn btn-primary">Registrarme</button>
         </div>
     </form>
     <!-- FIN DEL FORM -->
 
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/signUp.js"></script>
 
+    <!-- FONTAWESOME SCRIPT -->
+    <script src="https://kit.fontawesome.com/a16d3588ae.js" crossorigin="anonymous"></script>
 
     <!-- INICIO DEL FOOTER -->
-    <footer>
-        <p style="margin-top: 1rem">Todos los derechos reservados a Disney©</p>
+    <footer class="bg-dark text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="text-center text-black text-uppercase" style="font-family: MenuFuente; -webkit-text-stroke: 0.6px white;">
+                <span class="pe-2">Creado por:</span>
+                <a href="https://github.com/ivobarin" target="_blank" class="text-black"
+                    style="-webkit-text-stroke: 0.6px white;">
+                    Ivo Barinstein
+                </a>
+                <i class="fa-brands fa-github fa-xl"></i>
+            </div>
+        </div>
     </footer>
     <!-- FIN DEL FOOTER -->
 
@@ -118,6 +133,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

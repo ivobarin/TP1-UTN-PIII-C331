@@ -26,7 +26,7 @@ header a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-text-stroke: 0.5px black
+  -webkit-text-stroke: 0.5px black;
 }
 
 header .navbar-nav .nav-link {
@@ -62,10 +62,6 @@ a .navbar-brand img {
   body {
     background-size: 60%;
   }
-
-  .seccion1 {
-    margin-top: 12rem;
-  }
 }
 
 /* ---------- SECCION 1 -----------*/
@@ -78,6 +74,12 @@ a .navbar-brand img {
 
 .seccion1 h1 {
   text-align: center;
+}
+
+#file:hover {
+  color: #cb8e14;
+  font-size: large;
+  transition: 0.3s ease-in-out;
 }
 
 /* --------- HERO SECTION ---------- */
@@ -154,6 +156,8 @@ a .navbar-brand img {
   display: flex;
   gap: 15px;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-body {
@@ -173,20 +177,40 @@ a .navbar-brand img {
   height: 40px;
 }
 
-/* --------- SIGN-IN -----------*/
+/* --------- SIGN-IN -Y SIGN UP ----------*/
 .form-body {
   border-radius: 10px;
   margin-top: 2rem;
 }
 
-@media (max-width: 1000px) {
-  .form-body {
-    margin-top: 12rem;
-  }
+/* -------- ALERTS ---------- */
+.swal-modal {
+  border: 3px solid white;
+  background-image: url("../images/background.png");
 }
 
-/* --------- FOOTER -----------*/
-footer {
-  text-align: center;
+.swal-text,
+.swal-title {
+  font-family: "MenuFuente";
   color: white;
+  -webkit-text-stroke: 0.8px black;
+}
+
+.swal-button {
+  background-color: #0d6efd;
+  color: #fff;
+  font-weight: lighter;
+  font-family: system-ui sans-serif;
+}
+
+.swal-icon--success::before,
+.swal-icon--success::after,
+.swal-icon--success__hide-corners {
+  display: none; /* Eliminamos el círculo */
+}
+
+/* --------- FOOTER ------------- */
+footer {
+  position: relative;
+  top: 10px;
 }

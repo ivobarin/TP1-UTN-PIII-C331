@@ -1,7 +1,9 @@
 # TP: Proyecto de Reserva de Hoteles - Ivo Barinstein
 [Consigna del TP aqui!](/Consigna.md)
-## Concepto General del Sitio
 
+[Preview del sitio aqui!](https://ivobarin.github.io/TP1-UTN-PIII-C331/)
+
+## Concepto General del Sitio
 El objetivo principal de este proyecto fue desarrollar un sitio web de reservas de hoteles con una temática inmersiva inspirada en el universo de **Star Wars**. Siendo fanático de la ciencia ficción, decidí que este tema me permitiría explorar un enfoque creativo mientras aplicaba conceptos tradicionales de desarrollo web. 
 
 Inicialmente, consideré crear un sitio web enfocado en servicios de bares, centrado específicamente en la famosa **Cantina de Mos Eisley**. Sin embargo, a medida que avanzaba el proyecto, opté por cambiar a un enfoque más amplio: un sistema de reservas de hoteles intergalácticos. Este enfoque no solo permite una mayor interacción con el contenido, sino que también abre la posibilidad de explorar diferentes ubicaciones icónicas dentro del universo de **Star Wars**.

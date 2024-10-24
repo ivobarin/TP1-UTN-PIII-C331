@@ -3,10 +3,8 @@
 
 [Preview del sitio aqui!](https://ivobarin.github.io/TP1-UTN-PIII-C331/)
 
-## Concepto General del Sitio
-El objetivo principal de este proyecto fue desarrollar un sitio web de reservas de hoteles con una temática inmersiva inspirada en el universo de **Star Wars**. Siendo fanático de la ciencia ficción, decidí que este tema me permitiría explorar un enfoque creativo mientras aplicaba conceptos tradicionales de desarrollo web. 
-
-Inicialmente, consideré crear un sitio web enfocado en servicios de bares, centrado específicamente en la famosa **Cantina de Mos Eisley**. Sin embargo, a medida que avanzaba el proyecto, opté por cambiar a un enfoque más amplio: un sistema de reservas de hoteles intergalácticos. Este enfoque no solo permite una mayor interacción con el contenido, sino que también abre la posibilidad de explorar diferentes ubicaciones icónicas dentro del universo de **Star Wars**.
+### Trabajo Práctico Parte 1b — HTML CSS
+[2DA PARTE DEL TP AQUI!](/TP1b-UTN-PIII-C331/README.md)
 
 ## Estructura de la pagina Home (`index.html`)
 
@@ -47,13 +45,6 @@ El pie de página del sitio incluye la marca registrada del proyecto, enlaces ad
 - **Flexbox**: Para la organización interna de las tarjetas y la disposición del contenido. Esto permite un diseño flexible y ajustable, proporcionando una alineación perfecta de los elementos en la sección de lugares turísticos.
 
 - El sitio utiliza la fuente personalizada **Soloist-Z6M8.otf** para los menús, reforzando la estética temática de **Star Wars**. Complementando la experiencia inmersiva del usuario en la página.
-
-## Cosas a modificar en un futuro
-_Por temas de tiempo no pude hacer toda la página interactiva con pantallas pequeñas, aquellas secciones son:_
-- El cuerpo del hero section 
-- El cuerpo de las tarjetas de cada planeta
-
-La idea sería poder cambiar esto a lo largo del tiempo, y retocar el nav-bar para que haya 2 barras de navegaciones dependiendo el tamaño de cada pantalla, en vez de una sola. Simplificando mucho más el código. 
 
 ## Prototipo del Diseño del Home 
 

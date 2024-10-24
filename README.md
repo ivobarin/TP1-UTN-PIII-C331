@@ -3,8 +3,9 @@
 
 [Preview del sitio aqui!](https://ivobarin.github.io/TP1-UTN-PIII-C331/)
 
+
 ### Trabajo Práctico Parte 1b — HTML CSS
-[2DA PARTE DEL TP AQUI!](./TP1b-UTN-PIII-C331/README.md)
+[2DA PARTE DEL TP AQUI!](./TP1b/README.md)
 
 ## Estructura de la pagina Home (`index.html`)
 
